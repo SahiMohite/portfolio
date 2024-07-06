@@ -1,5 +1,6 @@
 import React from "react";
 import "./Projects.css";
+import RecipeImg from "../../assets/recipeImg.png";
 import YoutubeImg from "../../assets/youtubeImg.jpg";
 import FinanceImg from "../../assets/financeTracker.jfif";
 import PlacesImg from "../../assets/placesImg.jpg";
@@ -12,7 +13,35 @@ const Projects = () => {
       <h2 className="projectsTitle">My Projects</h2>
       <div className="projectsContainer">
         <div className="project">
-          <a href="" target="_blank">
+          {/* <a href="#" target="_blank" rel="noreferrer"> */}
+            <div className="projectImg">
+              <img src={RecipeImg} alt="Recipe App"></img>
+            </div>
+            <div className="projectDesc">
+              <h3>Recipe App</h3>
+              <p>
+                A recipe app is a digital platform that allows users to
+                discover, save, and share recipes. Users can browse a wide
+                variety of recipes. The app typically includes
+                features for creating step-by-step cooking instructions with images or videos.
+                Additionally, users can contribute their own recipes and save other users recipes.
+              </p>
+            </div>
+            <div className="projectSourceCode">
+              <a
+                href="https://github.com/SahiMohite/recipeApp.git"
+                className="githubLink"
+                alt="Link"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img src={GithubImg} alt="Git"></img>
+              </a>
+            </div>
+          {/* </a> */}
+        </div>
+        <div className="project">
+          {/* <a href="#" target="_blank" rel="noreferrer"> */}
             <div className="projectImg">
               <img src={FinanceImg} alt="Finance Tracker"></img>
             </div>
@@ -27,7 +56,7 @@ const Projects = () => {
             </div>
             <div className="projectSourceCode">
               <a
-                href=""
+                href="https://github.com/SahiMohite/BudgetBuddy.git"
                 className="githubLink"
                 alt="Link"
                 target="_blank"
@@ -36,10 +65,10 @@ const Projects = () => {
                 <img src={GithubImg} alt="Git"></img>
               </a>
             </div>
-          </a>
+          {/* </a> */}
         </div>
         <div className="project">
-          <a href="" target="_blank">
+          {/* <a href="" target="_blank" rel="noreferrer"> */}
             <div className="projectImg">
               <img src={YoutubeImg} alt="Youtube Clone"></img>
             </div>
@@ -53,7 +82,7 @@ const Projects = () => {
             </div>
             <div className="projectSourceCode">
               <a
-                href=""
+                href="https://github.com/SahiMohite/Youtube-Clone.git"
                 className="githubLink"
                 alt="Link"
                 target="_blank"
@@ -62,13 +91,14 @@ const Projects = () => {
                 <img src={GithubImg} alt="Git"></img>
               </a>
             </div>
-          </a>
+          {/* </a> */}
         </div>
         <div className="project">
           <a
             href="https://shareplacewithme.netlify.app/"
             className="liveLink"
             target="_blank"
+            rel="noreferrer"
           >
             <div className="projectImg">
               <img src={PlacesImg} alt="Share Places"></img>
@@ -85,7 +115,7 @@ const Projects = () => {
             </div>
             <div className="projectSourceCode">
               <a
-                href="https://github.com/SahiMohite/client-mern-places.git"
+                href="https://github.com/SahiMohite/share-places.git"
                 alt="Link"
                 className="githubLink"
                 target="_blank"
@@ -98,9 +128,10 @@ const Projects = () => {
         </div>
         <div className="project">
           <a
-            href="https://sahimohite.github.io/Online-Book-Store/y"
+            href="https://sahilbookstore.netlify.app/"
             className="liveLink"
             target="_blank"
+            rel="noreferrer"
           >
             <div className="projectImg">
               <img src={BookImg} alt="Bookie"></img>
@@ -108,10 +139,11 @@ const Projects = () => {
             <div className="projectDesc">
               <h3>Bookie</h3>
               <p>
-                An online book store website provides a convenient platform for users to browse, purchase, and manage
-                a wide range of books in digital and physical formats. Users can
-                explore genres fostering a seamless interaction between readers and
-                authors/publishers worldwide.
+                An online book store website provides a convenient platform for
+                users to browse, purchase, and manage a wide range of books in
+                digital and physical formats. Users can explore genres fostering
+                a seamless interaction between readers and authors/publishers
+                worldwide.
               </p>
             </div>
             <div className="projectSourceCode">
