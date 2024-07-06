@@ -1,0 +1,121 @@
+#intro {
+    height: calc(100vh - 4rem);
+    width: 100vw;
+    /* max-width: 75rem; */
+    margin: 0 auto;
+    padding: 0 5rem;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: url('../../assets/bgImg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+  
+  .earth {
+    width: 600px;
+    height: 450px; /* Adjust as necessary */
+    position: relative;
+    /* top: -3rem;
+    right: 5rem; */
+  }
+  
+  
+.bg {
+    position: absolute;
+    top: -4rem;
+    right: 0;
+    z-index: -1;
+    object-fit: cover;
+    height: 100vh;
+}
+
+.introContent {
+    padding: 2rem;
+    font-size: 3rem;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hello {
+    font-size: 1.7rem;
+    font-weight: 100;
+}
+
+.introName {
+    color: #66FCF1;
+}
+
+.introPara {
+    font-size: medium;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.btn {
+    background: transparent;
+    margin: 1rem 0;
+    padding: 0.75rem 1.5rem;
+    border: 2px solid #66FCF1;
+    border-radius: 2rem;
+    display: flex;
+    gap: 10px;
+    color: #66FCF1;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn:hover{
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25), 0 2px 8px white, inset 0px 0px 0px 1px rgba(255, 255, 255, 0.1);
+}
+
+.btnImg {
+    object-fit: cover;
+    margin: 0 0.25rem;
+    height: 1rem;
+} 
+
+@media screen and (max-width:902px) {
+    #intro {
+        flex-direction: column;
+        height: calc(100vh-4rem);
+    }   
+
+    .earth {
+        width: 400px;
+        height: 350px; /* Adjust as necessary */
+        position: relative;
+        /* top: -3rem;
+        right: 5rem; */
+      }
+    
+      .introContent {
+        justify-content: left;
+      }
+}
+@media screen and (max-width:840px) {
+    .bg {
+        right: -10vw;
+    }
+
+    .introContent {
+        font-size: 10vw;
+    }
+
+    .hello {
+        font-size: 4.5vw;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .bg {
+        right: -20vw;
+    }
+}
+
+/* 1:04:00 */

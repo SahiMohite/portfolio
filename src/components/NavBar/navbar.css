@@ -1,0 +1,113 @@
+.navbar {
+    background-color: #0B0C10;
+    height: 5rem;
+    width: 100vw;
+    /* max-width: 7; */
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+    transition: opacity 0.3s ease;
+}
+
+.navbar.scrolling {
+    opacity: 0.7;
+}
+
+.logo {
+    font-size: 3rem;
+    font-family: "Playwrite DE LA", cursive;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    color: #66FCF1;
+    cursor: pointer;
+}
+
+.desktopMenuListItem {
+    margin: 1rem;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    color: #C5C6C7;
+}
+
+.desktopMenuListItem:hover {
+    color: #66FCF1;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid #66FCF1;
+}
+
+.desktopMenuBtn {
+    color: #66FCF1;
+    border: 2px solid #66FCF1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    padding: 1rem 2rem;
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+.desktopMenuBtn:hover {
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25), 0 2px 8px #66FCF1, inset 0px 0px 0px 1px rgba(255, 255, 255, 0.1);
+}
+
+.desktopMenuImg {
+    object-fit: cover;
+    height: 1rem;
+    width: 1rem;
+    margin: 1rem;
+}
+
+.active {
+    color: #66FCF1;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid #66FCF1;
+}
+
+.mobMenu {
+    display: none;
+    object-fit: cover;
+    height: 1.8rem;
+}
+
+.navMenu {
+    position: absolute;
+    top: 4rem;
+    right: 2rem;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    height: fit-content;
+    min-width: 15rem;
+    background: rgb(40, 40, 40);
+    border-radius: 1rem;
+}
+
+.listItem {
+    color: white;
+    padding: 0.5rem 3rem;
+    margin: 0.25rem;
+    background: rgb(30, 30, 30);
+}
+
+@media screen and (max-width:720px) {
+    .mobMenu {
+        display: flex;
+    }
+
+    .desktopMenu {
+        display: none;
+    }
+
+    .desktopMenuBtn {
+        display: none;
+    }
+}
