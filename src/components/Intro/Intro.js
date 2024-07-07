@@ -20,7 +20,7 @@ const Intro = () => {
         <p className='introPara'>
           I am a skilled full stack developer with experience in creating <br/>visually appealing and user-friendly websites.
         </p>
-        <a href='https://drive.google.com/file/d/1FThHXzBWbchLsHlb_FEGBbHMOGxecHkp/view?usp=sharing' target='_blank'>
+        <a href='https://drive.google.com/file/d/1moCDJORJUgCLLq7hvG6FDPZDmdUUjJMN/view?usp=sharing' target='_blank'>
           <button className='btn'>
             Resume
           </button>
